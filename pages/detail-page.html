@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<title>Museum detail page</title>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <main>
+        <section id="content">
+            <p>Giulia Mobile Museum App</p>
+            <h1>Escher</h1>
+            <img src="http://www.mardeisargassi.it/wp-content/uploads/2018/11/escher.jpg" alt="escher 1">
+        </section>
+        <section id="comments">
+            <h2>Comments</h2>
+            <section class="comment">
+                <h3>Arien said:</h3>
+                <p>"This is definitely one of my favorites!"</p>
+            </section>
+
+        </section>
+        <form onsubmit="submitComment(); return false">
+            <div class="formsection">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div class="formsection">
+                <label for="msg">Message</label>
+                <textarea id="msg"></textarea>
+            </div>
+            <div class="button">
+                <button type="default">Post your comment</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Made with ❤ at Codaisseur</p>
+    </footer>
+</body>
+
+</html>
