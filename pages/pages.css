@@ -1,0 +1,98 @@
+body {
+    background: #FFBA00;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+}
+
+main {
+    background: white;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 2rem 0;
+}
+
+h1 {
+    margin: 3rem 1rem;
+}
+
+h2 {
+    margin: 2rem;
+}
+
+.featured-image {
+    border: #e1e7eb 5px solid;
+    max-width: 80%;
+}
+
+#comments {
+    margin: 2rem auto;
+    border: 1px solid #e1e7eb;
+    text-align: left;
+    padding: 1rem 5rem;
+}
+
+#comments h2 {
+    margin: 2rem 0;
+}
+
+.formsection{
+    margin: 2rem auto;
+    padding: 0 5rem 0 5rem;
+}
+.comment {
+    background: #ccf2f7;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.formsection{
+    text-align: left
+}
+.formsection label {
+    display: block;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.formsection input, 
+.formsection textarea {
+    border: none;
+    background: #ccf2f7;
+    border-radius: 10px;
+    display: block;
+    padding: 1rem;
+    width:70%;
+    margin: 0;
+}
+.button{
+   
+}
+.button button{
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    height: 50px;
+    background: #3498db;
+    border-bottom: 2px solid #2980b9;
+    padding: 0;
+}
+.button button{
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    height: 50px;
+    background: #3498db;
+    border-bottom: 5px solid #2980b9;
+    padding: 0;
+    display:inline-block;
+    padding: 0 30px;
+    border-radius:5px;
+    font-weight: bold;
+    
+}
+.button button:hover{ background: #2980b9;
+}
