@@ -2,12 +2,21 @@
 function doesNotPassAllValidations(name, msg){
     // append errors
     
+    
+    
+
+    const error = document.getElementsByClassName('error')
+    error.innerHTML = 'ciao'
+    
+    let errorMsg
     if (!name || !msg){
-        alert('You forgot to fill in your name or message!')
+        errorMsg = 'You forgot to fill in your name or message!'
+        
         return true
     }
     else if (msg.length > 280){
-        alert('too long message!')
+        errorArea.appendChild(errorContainer)
+        errorContainer.innerHTML = 'too long message!'
         return true
     }
     else {
@@ -23,6 +32,19 @@ function submitComment() {
 
     const textArea = document.querySelector('#msg')
     const msg = textArea.value
+    
+    // add errors
+    const errorArea = document.querySelector('.button')
+    const errorContainer = document.createElement('p')
+    errorContainer.classList.add('error')
+    errorArea.appendChild(errorContainer)
+    
+
+    
+
+
+    
+    
     
 
     if (doesNotPassAllValidations(name, msg) === true) {
