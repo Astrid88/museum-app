@@ -1,4 +1,20 @@
 // add event handler
+function doesNotPassAllValidations(name, msg){
+    // append errors
+    
+    if (!name || !msg){
+        alert('You forgot to fill in your name or message!')
+        return true
+    }
+    else if (msg.length > 280){
+        alert('too long message!')
+        return true
+    }
+    else {
+        return false
+    }
+    
+}
 function submitComment() {
     
     //get values on submit
@@ -9,13 +25,10 @@ function submitComment() {
     const msg = textArea.value
     
 
-    if (!name || !msg) {
-        alert('You forgot to fill in your name or message!')
-        //return null
+    if (doesNotPassAllValidations(name, msg) === true) {
+        return null
     }
-    else if (msg.length > 280){
-        alert('too long message!')
-    }
+   
     else {
         // create the elements you need
         const comment = document.createElement('section')
@@ -36,9 +49,4 @@ function submitComment() {
         textArea.value = null
     }
     
-}
-function doesNotPassAllValidations(name, msg){
-    if (!name || !msg){
-        
-    }
 }
